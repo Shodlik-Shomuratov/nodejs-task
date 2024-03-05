@@ -1,7 +1,7 @@
 # How to start the application
 
 1. Clone this repository:
-   `git clone https://github.com/Shodlik-Shomuratov/nodejs-task.git`
+   `git clone https://github.com/Shodlik-Shomuratov/nodejs-task.git` and enter the directory `cd nodejs-task`
 
 2. Install the dependencies:
    `npm install`

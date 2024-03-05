@@ -43,8 +43,14 @@ async function verifyUser(req, res, next) {
 				error: true,
 				errorMessage: "Invalid JWT token!",
 			});
+		} else if (error.message === "jwt expired") {
+			return res.status(400).json({
+				data: null,
+				message: null,
+				error: true,
+				errorMessage: "Expired JWT token!",
+			});
 		}
-
 		next(error);
 	}
 }
